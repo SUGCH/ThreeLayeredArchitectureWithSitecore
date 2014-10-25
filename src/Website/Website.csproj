@@ -46,6 +46,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.Mvc">
+      <HintPath>..\..\lib\Sitecore.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -93,6 +96,10 @@
     <Content Include="App_Config\Include\Serialization.config" />
     <Content Include="App_Config\Include\SUGCH2014.config" />
     <None Include="Properties\PublishProfiles\File System.pubxml" />
+    <Content Include="Views\Renderings\Sample\SampleInnerSublayout.cshtml" />
+    <Content Include="Views\Renderings\Sample\SampleLayout.cshtml" />
+    <Content Include="Views\Renderings\Sample\SampleRendering.cshtml" />
+    <Content Include="Views\Renderings\Sample\SampleSublayout.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
