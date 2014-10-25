@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Model.NewsEntry>
+
+<br /><br /><br />
+
+<h1>News List</h1>
+
+<ul>
+    
+    @foreach (var item in Model)
+    {
+        <li>
+            @item.Rank - @item.Title (@item.Date)
+        </li>
+    }
+
+</ul>
