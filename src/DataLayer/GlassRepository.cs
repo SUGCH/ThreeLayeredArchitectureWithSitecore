@@ -18,7 +18,7 @@
         
         public IEnumerable<NewsEntry> GetNews()
         {
-            return Enumerable.Empty<NewsEntry>();
+            return this.sitecoreContext.Query<NewsEntry>("/sitecore/content/Home/News/*");
         }
     }
 }

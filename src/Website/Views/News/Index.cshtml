@@ -9,7 +9,7 @@
     @foreach (var item in Model)
     {
         <li>
-            @item.Rank - @item.Title (@item.Date)
+            @item.Rank - @item.Title (@item.Date.ToShortDateString())
         </li>
     }
 
