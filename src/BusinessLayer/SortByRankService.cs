@@ -7,11 +7,11 @@
 
     using Model;
 
-    public class SortByRank : INewsService
+    public class SortByRankService : INewsService
     {
         private readonly INewsRepository newsRepository;
 
-        public SortByRank(INewsRepository newsRepository)
+        public SortByRankService(INewsRepository newsRepository)
         {
             this.newsRepository = newsRepository;
         }

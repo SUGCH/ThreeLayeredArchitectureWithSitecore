@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="GlassRepository.cs" />
     <Compile Include="INewsRepository.cs" />
+    <Compile Include="MockRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
