@@ -17,8 +17,10 @@ namespace Website.App_Start
     using Ninject;
     using Ninject.Web.Common;
 
-    public static class NinjectWebCommon 
+    public static class NinjectWebCommon
     {
+        # region Not important
+
         private static readonly Bootstrapper bootstrapper = new Bootstrapper();
 
         /// <summary>
@@ -61,15 +63,20 @@ namespace Website.App_Start
             }
         }
 
+        #endregion
+
         /// <summary>
         /// Load your modules or register your services here!
         /// </summary>
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
-            kernel.Bind<INewsRepository>().To<GlassRepository>();
-            kernel.Bind<INewsService>().To<SortByDateService>();
+            // data layer
             kernel.Bind<ISitecoreContext>().To<SitecoreContext>();
+            kernel.Bind<INewsRepository>().To<GlassRepository>();
+
+            // business layer
+            kernel.Bind<INewsService>().To<SortByDateService>(); 
         }        
     }
 }
